@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    h1{
+      color: #326450;
+      font-size: large;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table tr {
+      *background-color: whitesmoke;
+    }
+    table tr:last-child *{
+      border-bottom: none;
+    }
+    table th, table td {
+      text-align: center;
+      border: solid 2px #fff;
+      color: black;
+      padding: 10px 0;
+      font-size: 36px;
+    }
+  </style>
+</head>
+<body>
+<h1>Question</h1>
+<table width=100%>
+{{ range .}}
+  <tr><td>{{.A}}</td><td>x</td><td>{{.B}}</td><td>=</td><td>   </td></tr>
+{{ end}}
+</table>
+</body>
+</html>
